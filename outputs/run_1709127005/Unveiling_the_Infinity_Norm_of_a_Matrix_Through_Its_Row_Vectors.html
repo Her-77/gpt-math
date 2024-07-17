@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unveiling the Infinity Norm of a Matrix Through Its Row Vectors</title>
+    <link rel="icon" type="image/x-icon" href="../../frontend/static/favicon.ico">
+
+    <style>
+        /* CSS content */
+        body {
+            font-family: 'Times New Roman', serif;
+            font-size: 18px;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            font-family: 'Georgia', serif;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .content .main-image {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto 20px;
+        }
+
+        .content .article {
+            margin-bottom: 20px;
+        }
+
+        .content .article p {
+            margin-bottom: 15px;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 14px;
+            color: #666;
+            border-top: 1px solid #ddd;
+            padding-top: 10px;
+            margin-top: 30px;
+        }
+
+        @media screen and (max-width: 600px) {
+            .container {
+                width: 95%;
+            }
+
+            .header h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Unveiling the Infinity Norm of a Matrix Through Its Row Vectors</h1>
+        </header>
+
+        <div class="content">
+            <article class="article">
+                <img class="main-image" src="https://h7.alamy.com/comp/2AHHNH4/math-on-black-board-with-many-solution-2AHHNH4.jpg" alt="Article Image">
+                <p class="date">28/02/2024</p>
+                <p>In the fascinating world of linear algebra, norms play a pivotal role in measuring the size or length of vectors and matrices. Among the various norms, the infinity norm of a matrix, denoted as \\(||A||_{\infty}\\), stands out for its unique definition and significance. This article embarks on a journey to prove that the infinity norm of a matrix A equals the maximum 1-norm of its row vectors, bridging an essential connection between two seemingly disparate concepts.</p>
+                <p>To set the stage for our exploration, it's imperative to define the key players in our proof: the infinity norm (\\(||A||_{\infty}\\)) and the 1-norm of a row vector (\\(||a(i)||_1\\)). The infinity norm is calculated as the maximum absolute row sum of the matrix, \\(||A||_{\infty} = \max_{1 \leq i \leq m} \sum_{j}|a(i,j)|\\), while the 1-norm of a row vector is simply the sum of the absolute values of its elements, \\(||a(i)||_1 = \sum_{j}|a(i,j)|\\). Understanding these definitions is foundational for relating the matrix norm to its row vectors' norms.</p>
+                <p>Illustrating these concepts through an example can significantly enhance our comprehension. Consider the matrix A = [[1, -2], [-3, 4]]. By applying the definitions, we find that the infinity norm of A, \\(||A||_{\infty}\\), is 7, which is the maximum absolute row sum. Simultaneously, the 1-norms of the row vectors of A are {3, 7}, where the maximum 1-norm also equals 7. This example serves as a precursor to understanding the general proof.</p>
+                <p>Delving into the proof, we aim to demonstrate that \\(||A||_{\infty} = \max_{1 \leq i \leq m} ||a(i)||_1\\). The proof hinges on showing that the maximum absolute row sum of the matrix A is equivalent to the maximum of the 1-norms of its row vectors. This equivalence is not merely a coincidence but a fundamental property rooted in the definitions and elemental contributions of each component of the matrix to both norms.</p>
+                <p>To solidify our understanding, let's revisit the example matrix A = [[1, -2], [-3, 4]]. We've already established that \\(||A||_{\infty} = 7\\) and that the maximum 1-norm of its row vectors is also 7. This direct comparison between the infinity norm and the maximum 1-norm of the row vectors illustrates the proof's essence: the infinity norm of a matrix is, indeed, equal to the maximum 1-norm of its row vectors. Through logical reasoning and calculated steps, we unveil the intimate connection between these norms, enriching our grasp of linear algebra's nuances.</p>
+            </article>
+        </div>
+
+        <footer class="footer">
+            <p>© 2023 Bauhinia AI. All Rights Reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

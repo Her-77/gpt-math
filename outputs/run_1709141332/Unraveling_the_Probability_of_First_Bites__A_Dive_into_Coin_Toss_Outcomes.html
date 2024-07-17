@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unraveling the Probability of First Bites: A Dive into Coin Toss Outcomes</title>
+    <link rel="icon" type="image/x-icon" href="../../frontend/static/favicon.ico">
+
+    
+    <style>
+        /* CSS content */
+        body {
+            font-family: 'Times New Roman', serif;
+            font-size: 18px;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            font-family: 'Georgia', serif;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .content .main-image {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto 20px;
+        }
+
+        .content .article {
+            margin-bottom: 20px;
+        }
+
+        .content .article p {
+            margin-bottom: 15px;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 14px;
+            color: #666;
+            border-top: 1px solid #ddd;
+            padding-top: 10px;
+            margin-top: 30px;
+        }
+
+        @media screen and (max-width: 600px) {
+            .container {
+                width: 95%;
+            }
+
+            .header h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Unraveling the Probability of First Bites: A Dive into Coin Toss Outcomes</h1>
+        </header>
+
+        <div class="content">
+            <article class="article">
+                <img class="main-image" src="https://h7.alamy.com/comp/2AHHNH4/math-on-black-board-with-many-solution-2AHHNH4.jpg" alt="Article Image">
+                <p class="date">28/02/2024</p>
+                <p>Imagine a scenario where two people, let's call them A and B, are deciding who gets to eat an appealing apple first by tossing a coin repeatedly. The rule is simple: if the coin lands heads (H), person A eats the apple; if it's tails (T), they toss again until it lands heads. This seemingly straightforward game opens a fascinating exploration into the world of probabilities and mathematical series. But how do we calculate the probability of A getting to take the first bite? This article will guide you through the process, step by step, uncovering the mathematical elegance behind probability theory.</p>
+                <p>The journey begins by identifying all possible outcomes that result in A eating the apple first. These outcomes are essentially a series of coin tosses that lead to the first occurrence of heads. They include a single heads toss (H), a tails followed by heads (TH), two tails followed by heads (TTH), and so on, stretching into infinity (H, TH, TTH, TTTH, ...). This step sets the stage for calculating the probability by laying out all the events where A wins the apple, illustrating the infinite possibilities in a seemingly simple game.</p>
+                <p>To grasp the probability of each outcome, it's crucial to understand that the probability of getting heads or tails in a fair coin toss is 0.5. Therefore, the probability of the first outcome (H) is 0.5, the second outcome (TH) is 0.5 squared (since we're looking at two independent events happening in sequence), the third outcome (TTH) is 0.5 cubed, and so forth. This progression reveals a pattern of probabilities: 0.5, 0.5^2, 0.5^3, 0.5^4, ..., each decreasing as the number of required tails before the first heads increases.</p>
+                <p>The culmination of our exploration is the application of the sum of a geometric series formula to calculate the total probability of A eating the apple first. Recognizing that the probabilities form a geometric series allows us to use the formula S = a/(1-r), where 'a' is the first term (0.5) and 'r' is the common ratio (also 0.5). By substituting these values into the formula, we find that the total probability of A eating the apple first is 0.5 / (1 - 0.5) = 0.66666666667, or roughly 2/3. This elegant solution not only simplifies the calculation but also reveals the power of mathematical concepts in solving real-world problems.</p>
+                <p>The probability of the first person eating the apple based on the outcome of repeated coin tosses is a classic example of how mathematical principles can be applied to everyday scenarios. Through identifying possible outcomes, understanding the probability of each, and leveraging the sum of a geometric series formula, we uncovered that the chance of person A eating the apple first is approximately 66.67%. This journey through probability, infinite series, and geometric sequences offers a glimpse into the beautiful interplay between math and the world around us.</p>
+            </article>
+        </div>
+
+        <footer class="footer">
+            <p>© 2023 Bauhinia AI. All Rights Reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

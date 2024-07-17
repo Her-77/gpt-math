@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solving the Coin Toss Probability Puzzle</title>
+    <link rel="icon" type="image/x-icon" href="../../frontend/static/favicon.ico">
+
+    
+    <style>
+        /* CSS content */
+        body {
+            font-family: 'Times New Roman', serif;
+            font-size: 18px;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            font-family: 'Georgia', serif;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .content .main-image {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto 20px;
+        }
+
+        .content .article {
+            margin-bottom: 20px;
+        }
+
+        .content .article p {
+            margin-bottom: 15px;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 14px;
+            color: #666;
+            border-top: 1px solid #ddd;
+            padding-top: 10px;
+            margin-top: 30px;
+        }
+
+        @media screen and (max-width: 600px) {
+            .container {
+                width: 95%;
+            }
+
+            .header h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Solving the Coin Toss Probability Puzzle</h1>
+        </header>
+
+        <div class="content">
+            <article class="article">
+                <img class="main-image" src="https://h7.alamy.com/comp/2AHHNH4/math-on-black-board-with-many-solution-2AHHNH4.jpg" alt="Article Image">
+                <p class="date">28/02/2024</p>
+                <p>Probability puzzles often seem perplexing at first glance, but they can be unraveled with a step-by-step approach. One such enigma involves determining the likelihood that the first person to toss a coin will eat an apple, assuming that a heads result means they get to eat. This problem not only tests our understanding of basic probability but also challenges us to apply these principles in a sequential scenario.</p>
+                <p>The key to solving this puzzle lies in identifying all possible sequences that allow the first person to eat the apple. The solution becomes apparent when we realize that the first person can win by tossing a heads on their first try (H), or after a series of tails followed by a heads when it's their turn again (e.g., TTH, TTTTH, ...). This recognition is crucial as it broadens our perspective to include all viable outcomes in which the first person emerges victorious.</p>
+                <p>To quantify our observations, we express the problem as a sum of probabilities for each sequence identified. Since the probability of tossing a heads (H) or tails (T) with a fair coin is 1/2, we can calculate the probabilities for each sequence. For instance, the probability of getting heads on the first try is 1/2, while the probability of the sequence TTH is calculated by multiplying the probability of each individual toss, yielding (1/2)^3.</p>
+                <p>Upon closer examination, these sequences and their probabilities form a geometric series, a sequence of numbers where each term after the first is found by multiplying the previous one by a fixed, non-zero number called the ratio. In our case, the first term (a) is 1/2 (the probability of getting heads on the first toss), and the common ratio (r) is 1/4 (the probability of getting two tails followed by a heads). The sum of an infinite geometric series can be elegantly solved using the formula a / (1 - r), which in our context translates to 1/2 / (1 - 1/4).</p>
+                <p>Applying the formula yields a sum of 2/3, meaning the probability that the first person to toss a coin will eat the apple is 0.6666666666666666, or roughly 66.67%. This result not only provides a direct answer to our original question but also illustrates the power of mathematical tools in solving seemingly complex problems through logical deduction and the application of geometric series concepts.</p>
+            </article>
+        </div>
+
+        <footer class="footer">
+            <p>© 2023 Bauhinia AI. All Rights Reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
