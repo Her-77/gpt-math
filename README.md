@@ -1,7 +1,7 @@
 # gpt-math
 
 ## 文件结构
-.  
+.   
 ├───backend         // 后端目录  
 │   ├───agents      // agents 定义  
 │   └───templates   // 网页模板  
